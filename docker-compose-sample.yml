@@ -9,6 +9,8 @@ services:
             - "40772:40772"
             - "9229:9229"
         volumes:
+            - /var/run/pcscd:/var/run/pcscd
+            - /run/pcscd:/run/pcscd
             - ./mirakurun/conf:/app-config
             - ./mirakurun/data:/app-data
         environment:
