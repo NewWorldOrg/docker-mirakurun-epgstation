@@ -13,7 +13,6 @@ services:
             - /run/pcscd:/run/pcscd
             - ./mirakurun/conf:/app-config
             - ./mirakurun/data:/app-data
-
         environment:
             TZ: "Asia/Tokyo"
         devices:
